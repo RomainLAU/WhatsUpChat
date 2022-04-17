@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300;400&display=swap');
+
+body{
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(32, 32, 32);
+}
+
+#messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    direction: ltr;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    width: fit-content;
+    min-width: 100px;
+    max-width: 40em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#messages > li{
+    background-color: rgb(209, 198, 255);
+}
+
+#ignoredUsers > li{
+    background-color: rgb(128, 23, 23);
+}
+
+#senderName{
+    margin-bottom: 10px;
+    font-weight: 900;
+    overflow-wrap: break-word;
+}
+
+#sendTime{
+    margin-top: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sendingInputs{
+    z-index: 100;
+    position: sticky;
+    bottom: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    display: flex;
+    column-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#sendingInputs > textarea {
+    width: 90%;
+    height: 50px;
+    font-size: 32px;
+    border-radius: 10px;
+    padding: 10px 10px 5px 10px;;
+}
+
+#sendingInputs > input[type=button] {
+    width: fit-content;
+    font-size: 32px;
+    border-radius: 10px;
+}
+
+#sendingInputs > input[type=button]:hover {
+    background-color:rgb(211, 255, 231);
+}
+
+#disconnect,
+#delete{
+    border-radius: 10px;
+    color: red;
+    font-weight: bold;
+}
+
+.update,
+.delete{
+    border-radius: 10px;
+    border: solid 1px black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.update{
+    color: rgb(153, 99, 0)
+}
+
+.delete{
+    color: rgb(121, 0, 0);
+}
+
+#identificationForm > #loginError{
+    color: red;
+    display: none;
+}
+
+#identificationForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1em;
+    height: 100vh;
+}
+
+#identificationForm > input[type="text"],
+#identificationForm > input[type="password"] {
+    height: 10em;
+    width: 25em;
+    font-size: 1.5em;
+}
+
+#identificationForm > input[type="button"] {
+    width: 20em;
+    height: 5em;
+    border: solid 2px rgb(255, 207, 33);
+    background-color: transparent;
+    color:rgb(255, 207, 33);
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0;
+}
+
+#identificationForm > input[type="button"]:hover{
+    background-color:rgb(255, 207, 33);
+    color: rgb(32, 32, 32);
+}
+
+/*  */
